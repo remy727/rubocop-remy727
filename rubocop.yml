@@ -10,6 +10,7 @@ inherit_mode:
 AllCops:
   DisabledByDefault: true
   Exclude:
+    - "bin/**/*"
     - "data/**/*"
     - "db/*schema.rb"
     - "log/**/*"
