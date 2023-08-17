@@ -10,12 +10,20 @@ inherit_mode:
 AllCops:
   DisabledByDefault: true
   Exclude:
-    - "bin/**/*"
+    - "bin/*"
+    - "config/boot.rb"
+    - "config/environment.rb"
+    - "config/environments/*.rb"
+    - "config/puma.rb"
+    - "config.ru"
     - "data/**/*"
-    - "db/*schema.rb"
+    - "db/schema.rb"
+    - "db/migrate/*"
+    - "lib/templates/**/*"
     - "log/**/*"
     - "node_modules/**/*"
     - "public/**/*"
+    - "script/*"
     - "storage/**/*"
     - "tmp/**/*"
     - "vendor/**/*"
